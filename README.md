@@ -96,3 +96,74 @@
 **2. Internal Feature Maps (Explainable AI)**
 > *Visualizes the internal filters of the first Convolutional Layer, proving the AI focuses on leaf edges and disease spots.*
 ![Feature Maps](feature_maps.png)
+
+### ✅ Week 4: Final Presentation & Documentation
+**Status:** Completed
+**Focus:** Project Polish, Demo Video, and Final Reporting
+
+**Key Activities:**
+- **Project Demo Video:** Recorded a comprehensive screen-capture demonstrating:
+  - The "Inference Engine" predicting diseases on new images.
+  - The "Feature Maps" visualization to explain the model's logic.
+  - The speed and stability of the system.
+- **Short Project Report:** Compiled a formal document detailing the methodology, optimization steps, and statistical validation (ROC/AUC).
+- **Literature Review:** Conducted an extensive review of 10 recent research papers (2024-2025) to align the project with current academic standards.
+
+**Outcome:**
+- A complete, "Research-Grade" GitHub repository ready for submission.
+- **Deliverables:** `Project_Short_Report1.doc`,
+
+---
+
+### 📚 Literature Review (2024-2025)
+*State-of-the-art research papers referenced for this project (Direct Links Included):*
+
+1.  **[Deep learning and explainable AI for classification of potato leaf diseases (2024)](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2024.1449329/full)**
+    * *Journal:* Frontiers in Artificial Intelligence
+    * *Relevance:* Validates the use of Explainable AI (XAI) to interpret model decisions, similar to our Feature Map visualization.
+
+2.  **[Potato Leaf Disease Detection Based on a Lightweight Deep Learning Model (2024)](https://www.mdpi.com/2504-4990/6/4/114)**
+    * *Journal:* MDPI AgriEngineering
+    * *Relevance:* Supports our choice of a lightweight custom CNN for efficient mobile deployment (0.40 GFLOPs).
+
+3.  **[Enhancing plant disease detection through deep learning: a Depthwise CNN (2025)](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2024.1505857/full)**
+    * *Journal:* Frontiers in Plant Science
+    * *Relevance:* Confirms that depthwise separable convolutions improve efficiency without sacrificing accuracy.
+
+4.  **[A review of plant leaf disease identification by deep learning algorithms (2025)](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2025.1637241/full)**
+    * *Journal:* Frontiers in Plant Science
+    * *Relevance:* Provided the foundation for our Data Augmentation strategy to handle background noise.
+
+5.  **[Unified Lightweight CNN-Based Model for Multi-Crop Disease Detection (2024)](https://ijsem.org/article/9%20April%202024%20IJSEM.pdf)**
+    * *Journal:* IJSEM
+    * *Relevance:* Demonstrates that custom architectures can effectively handle multiple crop types (Rice, Wheat, Corn).
+
+6.  **[Plant disease detection using vision transformers (2025)](https://www.researchgate.net/publication/388397435_Plant_disease_detection_using_vision_transformers)**
+    * *Journal:* International Journal of Electrical and Computer Engineering (IJECE)
+    * *Relevance:* A benchmark study comparing CNNs (our approach) against newer Vision Transformers (ViTs).
+
+7.  **[Research on a Potato Leaf Disease Diagnosis System Based on Deep Learning (2025)](https://www.mdpi.com/2077-0472/15/4/424)**
+    * *Journal:* MDPI Agriculture
+    * *Relevance:* Highlights the economic importance of early detection for potato yield optimization.
+
+8.  **[Comparative Study of Lightweight CNN Architectures for Maize Leaf Disease Detection (2025)](https://www.researchgate.net/publication/389526803_Comparative_Study_of_Lightweight_CNN_Architectures_for_Maize_Leaf_Disease_Detection)**
+    * *Journal:* European Journal of Applied Science
+    * *Relevance:* Validates the trend of comparing custom models against MobileNetV3 for edge devices.
+
+9.  **[Multi-Class Plant Leaf Disease Detection: A CNN-based Approach (2024)](https://www.researchgate.net/publication/383494704_Multi-Class_Plant_Leaf_Disease_Detection_A_CNN-based_Approach_with_Mobile_App_Integration)**
+    * *Journal:* International Journal of Computer Applications
+    * *Relevance:* Discusses the integration of CNN models into mobile apps, aligning with our Week 3 latency testing.
+
+10. **[Deep Learning Based Multi Crop Disease Detection System (2024)](https://journal.50sea.com/index.php/IJIST/article/view/944)**
+    * *Journal:* International Journal of Innovations in Science & Technology
+    * *Relevance:* Emphasizes the role of edge computing in modern agriculture.
+
+---
+
+### 👨‍💻 Author Details
+**Student Name:** Shah Zaib Khan
+**Roll Number:** SU92-MSAIW-S25-019
+**Program:** Master of Science in Artificial Intelligence (MSAI)
+
+**Submitted To:** Sir Talha
+**Institution:** Superior University
