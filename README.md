@@ -45,3 +45,12 @@
 **Outcome:**
 - Final Model: `potato_disease_final_model.keras`
 - **Test Accuracy Achieved:** 91.41% (Excellent baseline for a custom architecture)
+
+### 📊 Week 2 Visuals: Research Evidence
+**1. Training Stability (Accuracy vs Loss)**
+> *This graph demonstrates that the model learned effectively without memorizing noise (overfitting).*
+![Training Graph](accuracy_loss_graph.png)
+
+**2. Confusion Matrix (Error Analysis)**
+> *This matrix reveals exactly which disease classes the model predicts correctly vs. incorrectly.*
+![Confusion Matrix](confusion_matrix.png)
