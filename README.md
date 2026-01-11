@@ -7,12 +7,12 @@
 **Focus:** Data Ingestion, Preprocessing, and Research Setup
 
 **Key Activities:**
-- [cite_start]**Project Scope Definition:** Defined the problem statement targeting **Potato Leaf Diseases** (Early Blight, Late Blight, Healthy), aligning with **SDG 2: Zero Hunger**[cite: 38, 114].
+- **Project Scope Definition:** Defined the problem statement targeting **Potato Leaf Diseases** (Early Blight, Late Blight, Healthy), aligning with **SDG 2: Zero Hunger**.
 - **Data Acquisition:** - Sourced the **PlantVillage** dataset (Potato subset) from Kaggle.
   - Uploaded data to Google Drive for persistent access in Colab.
 - **Pipeline Implementation:** - Wrote a custom data loader using `tf.keras.preprocessing.image_dataset_from_directory`.
   - Standardized all input images to **256x256 pixels** for consistency.
-  - [cite_start]Implemented an **80/10/10 Split** (Train/Validation/Test) to ensure rigorous evaluation[cite: 95].
+  - Implemented an **80/10/10 Split** (Train/Validation/Test) to ensure rigorous evaluation.
 - **Optimization:** - Applied `cache()` and `prefetch(AUTOTUNE)` to optimize data loading speed during training.
 
 **Challenges Faced & Solutions:**
