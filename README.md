@@ -54,3 +54,45 @@
 **2. Confusion Matrix (Error Analysis)**
 > *This matrix reveals exactly which disease classes the model predicts correctly vs. incorrectly.*
 ![Confusion Matrix](confusion_matrix.png)
+
+### ✅ Week 3: Inference, Optimization & Advanced Evaluation
+**Status:** Completed
+**Focus:** Inference Deployment, Statistical Validation (ROC), and Explainable AI
+
+**Key Activities:**
+- **Inference Engine Simulation:**
+  - Developed a production-ready `predict_disease()` function that accepts raw images and outputs disease probability.
+  - Successfully loaded the saved `.keras` model to simulate a real-world deployment scenario.
+- **Stress Testing ("Farmer Scenarios"):**
+  - **Single Sample Test:** Verified the model correctly identifies individual leaves with high confidence (>90%).
+  - **Batch Processing:** Tested high-volume throughput (32 images at once).
+  - **Uncertainty Analysis:** Implemented a flag to alert the user if model confidence drops below 80%.
+- **Statistical Validation:**
+  - **ROC Curve:** Generated the Receiver Operating Characteristic curve to scientifically validate the model's sensitivity.
+  - **Result:** High Area Under Curve (AUC) confirms the model is robust against False Positives.
+- **Performance Optimization:**
+  - Conducted a **Latency Test** on the GPU.
+  - **Result:** Average inference speed is **< 50ms per image**, confirming suitability for real-time mobile apps.
+- **Explainable AI (XAI):**
+  - Visualized the **Internal Feature Maps** of the first Convolutional Layer.
+  - Confirmed the model is learning actual leaf textures (edges/spots) and not memorizing background noise.
+
+**Challenges Faced & Solutions:**
+- **Challenge:** Visualizing internal model layers ("Explainability").
+  - *Issue:* Attempting to plot feature maps caused an `IndexError` because the code initially selected the "Rescaling" layer instead of the "Convolutional" layer.
+  - *Solution:* Wrote a dynamic script to specifically search for and extract the first `Conv2D` layer automatically.
+
+**Outcome:**
+- A fully tested, optimized, and statistically validated inference system.
+- **Visual Proof:**
+  - **ROC Curve:** `roc_curve.png` (Statistical Proof)
+  - **Feature Maps:** `feature_maps.png` (Explainability Proof)
+
+### 📊 Week 3 Visuals: Advanced Analysis
+**1. ROC Curve (Statistical Validation)**
+> *Demonstrates the trade-off between True Positive Rate and False Positive Rate. High AUC indicates excellent performance.*
+![ROC Curve](roc_curve.png)
+
+**2. Internal Feature Maps (Explainable AI)**
+> *Visualizes the internal filters of the first Convolutional Layer, proving the AI focuses on leaf edges and disease spots.*
+![Feature Maps](feature_maps.png)
