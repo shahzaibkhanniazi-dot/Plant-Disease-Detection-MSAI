@@ -22,3 +22,26 @@
   - *Solution:* Configured Google Colab Environment to utilize Cloud GPU.
 
 **Outcome:** A robust, error-free data pipeline is now ready. The system successfully loads images, splits them into batches, and visualizes class labels.
+
+### ✅ Week 2: Model Architecture & Training
+**Status:** Completed
+**Focus:** Custom CNN Development and Stability Testing
+
+**Key Activities:**
+- **Architecture Design:** Designed a deep **Custom CNN** (5 Convolutional Blocks) from scratch.
+  - *Constraint Check:* Strictly avoided pre-trained models (ResNet/VGG) to adhere to research guidelines.
+  - *Innovation:* Integrated `RandomFlip` and `RandomRotation` layers directly into the model to improve generalization.
+- **Scientific Stability:** Implemented "Seed Locking" (Seed=42) for Python, NumPy, and TensorFlow to ensure the model training is reproducible and stable.
+- **Training Strategy:**
+  - **Optimizer:** Adam (Adaptive Learning Rate).
+  - **Epochs:** 25 (Selected empirically to prevent overfitting).
+  - **Loss Function:** Sparse Categorical Crossentropy.
+
+**Challenges Faced & Solutions:**
+- **Challenge:** Determining the optimal number of training epochs.
+  - *Analysis:* Training beyond 30 epochs caused the validation loss to fluctuate ("jumpy"), indicating overfitting.
+  - *Solution:* Capped training at **25 Epochs**, where the model achieved maximum stability.
+
+**Outcome:**
+- Final Model: `potato_disease_final_model.keras`
+- **Test Accuracy Achieved:** 91.41% (Excellent baseline for a custom architecture)
