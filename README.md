@@ -91,7 +91,7 @@
 ### 📊 Week 3 Visuals: Advanced Analysis
 **1. ROC Curve (Statistical Validation)**
 > *Demonstrates the trade-off between True Positive Rate and False Positive Rate. High AUC indicates excellent performance.*
-![ROC Curve](roc_curve.png)
+![ROC Curve](roc_curve.png.png)
 
 **2. Internal Feature Maps (Explainable AI)**
 > *Visualizes the internal filters of the first Convolutional Layer, proving the AI focuses on leaf edges and disease spots.*
